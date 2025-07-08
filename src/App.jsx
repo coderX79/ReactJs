@@ -4,14 +4,11 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App(){
-  const name=`coderX`;
-  const age=21;
-
-  return (
+  const isLoggedIn = true;
+  
+  return(
     <>
-    <h1>Hello, {name}!</h1>
-    <h2>your age is, {age}</h2>
-    <p>2 + 2 = {2 + 2}</p>
+     {isLoggedIn ? <h1>Welcome back!</h1> : <h1>Please log in</h1>}
     </>
   );
 }
